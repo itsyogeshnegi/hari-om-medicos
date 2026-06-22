@@ -25,7 +25,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <FooterCol title="Shop" links={[["Medicines", "/medicines"], ["Categories", "/categories"]]} />
+        <FooterCol title="Shop" links={[["Medicines", "/medicines"]]} />
         <FooterCol title="Support" links={[["Help Center", "/contact"]]} />
         <FooterCol title="Company" links={[["About Us", "/about"], ["Privacy Policy", "/about"], ["Terms & Conditions", "/about"]]} />
       </div>

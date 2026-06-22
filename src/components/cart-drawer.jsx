@@ -13,6 +13,9 @@ export function CartDrawer() {
   // Under 3km: free if subtotal > 299, else 49
   // Under 5km: free if subtotal > 499, else 49
   const deliveryFee = useMemo(() => {
+    if (distance === "pickup") {
+      return 0;
+    }
     if (distance === "3") {
       return subtotal > 299 ? 0 : 49;
     } else {
@@ -32,7 +35,11 @@ export function CartDrawer() {
     if (pincode.trim()) {
       msg += `*Pincode:* ${pincode.trim()}\n`;
     }
-    msg += `*Distance:* Under ${distance} km\n`;
+    if (distance === "pickup") {
+      msg += `*Distance:* Pickup / Take Away\n`;
+    } else {
+      msg += `*Distance:* Under ${distance} km\n`;
+    }
     msg += `*Delivery Fee:* ${deliveryFee === 0 ? "FREE" : `₹${deliveryFee}`}\n`;
     msg += `*Total Order Value:* ₹${total.toFixed(0)}\n`;
     msg += `\n*Medicines Ordered:*\n`;
@@ -133,7 +140,8 @@ export function CartDrawer() {
                 >
                   <option value="3">Under 3 km</option>
                   <option value="5">Under 5 km</option>
-                </select>
+                                    <option value="pickup">Pickup / Take Away</option>
+                  </select>
               </div>
               <div className="space-y-1.5">
                 <label htmlFor="pincode" className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Pincode (Optional)</label>
@@ -148,21 +156,7 @@ export function CartDrawer() {
               </div>
             </div>
 
-            {/* Price Calculations */}
-            <div className="border-t border-border pt-3 space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Medicine Subtotal</span>
-                <span className="font-semibold">₹{subtotal.toFixed(0)}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Delivery Charge</span>
-                <span className="font-semibold text-accent">{deliveryFee === 0 ? "FREE" : `₹${deliveryFee}`}</span>
-              </div>
-              <div className="flex justify-between font-bold text-base border-t border-border pt-2 text-foreground">
-                <span>Total</span>
-                <span>₹{total.toFixed(0)}</span>
-              </div>
-            </div>
+
 
             <div className="text-[10px] text-muted-foreground bg-surface rounded-xl p-2.5 border border-border leading-relaxed">
               💡 <strong>Delivery Policy:</strong> Free delivery under 3km for orders &gt; ₹299, and under 5km for orders &gt; ₹499. Otherwise a flat ₹49 charge applies.
