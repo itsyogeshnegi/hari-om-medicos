@@ -29,7 +29,7 @@ export function CartDrawer() {
 
   const whatsappMessage = useMemo(() => {
     if (items.length === 0 || !customerName.trim() || !location.trim()) return "";
-    let msg = `*MediCare Plus - New Order*\n\n`;
+    let msg = `*Hari Om Medicos - New Order*\n\n`;
     msg += `*Customer Name:* ${customerName.trim()}\n`;
     msg += `*Location:* ${location.trim()}\n`;
     if (pincode.trim()) {

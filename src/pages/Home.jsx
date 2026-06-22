@@ -121,7 +121,7 @@ export default function Home() {
 
       {/* HOW IT WORKS */}
       <section className="container-px mx-auto max-w-7xl py-12">
-        <SectionHeading eyebrow="Simple & secure" title="How MediCare Plus works" />
+        <SectionHeading eyebrow="Simple & secure" title="How Hari Om Medicos works" />
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             // ["1", "Search or upload Rx", "Find your medicine or upload your prescription."],

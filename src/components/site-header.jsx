@@ -41,9 +41,9 @@ export function SiteHeader() {
       </div>
       <div className="container-px mx-auto max-w-7xl py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 lg:gap-8">
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <img src={logo} alt="MediCare Plus" className="h-16 w-16 rounded-lg object-contain bg-white" />
+          <img src={logo} alt="Hari Om Medicos" className="h-16 w-16 rounded-lg object-contain bg-white" />
           <div className="hidden sm:block leading-tight">
-            {/* <div className="font-display font-extrabold text-lg text-primary">MediCare<span className="text-accent">+</span></div> */}
+            {/* <div className="font-display font-extrabold text-lg text-primary">Hari Om Medicos<span className="text-accent">+</span></div> */}
             <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Health · Care · Trust</div>
           </div>
         </Link>

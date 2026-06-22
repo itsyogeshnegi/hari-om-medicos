@@ -10,7 +10,7 @@ export function SiteFooter() {
           <div className="flex items-center gap-2">
             <img src={logo} alt="" className="h-16 w-16 rounded-lg bg-white object-contain" />
             <div className="leading-tight">
-              {/* <div className="font-display font-extrabold text-lg text-primary">MediCare<span className="text-accent">+</span></div> */}
+              {/* <div className="font-display font-extrabold text-lg text-primary">Hari Om Medicos<span className="text-accent">+</span></div> */}
               <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Health · Care · Trust</div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export function SiteFooter() {
 
       <div className="border-t border-border">
         <div className="container-px mx-auto max-w-7xl py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} MediCare Plus. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Hari Om Medicos. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <a aria-label="Facebook" href="#" className="p-2 rounded-lg hover:bg-background"><Facebook className="h-4 w-4" /></a>
             <a aria-label="Instagram" href="#" className="p-2 rounded-lg hover:bg-background"><Instagram className="h-4 w-4" /></a>

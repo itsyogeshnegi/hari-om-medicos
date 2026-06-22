@@ -3,7 +3,7 @@ import { ShieldCheck, Users, Truck, HeartPulse } from "lucide-react";
 export default function About() {
   return (
     <div className="container-px mx-auto max-w-5xl py-12">
-      <h1 className="font-display font-extrabold text-4xl">About MediCare Plus</h1>
+      <h1 className="font-display font-extrabold text-4xl">About Hari Om Medicos</h1>
       <p className="text-lg text-muted-foreground mt-4 max-w-3xl">We're on a mission to make quality healthcare accessible, affordable and reliable for every Indian family — one delivery at a time.</p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
