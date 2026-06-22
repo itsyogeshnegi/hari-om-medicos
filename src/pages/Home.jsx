@@ -140,7 +140,7 @@ export default function Home() {
       {/* TESTIMONIALS */}
       <section className="bg-surface mt-12">
         <div className="container-px mx-auto max-w-7xl py-14">
-          <SectionHeading eyebrow="Real stories" title="Loved by 2 million+ customers" />
+          <SectionHeading eyebrow="Real stories" title="Loved by 20,000+ customers" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.slice(0, 6).map((t, i) => (
               <div key={i} className="bg-card border border-border rounded-2xl p-6">
